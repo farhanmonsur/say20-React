@@ -15,9 +15,9 @@ export class ChooseTurn extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="Say20"/>
+                    <AppBar showMenuIconButton={false} titleStyle={styles.AppTitle} title="Say20"/>
                     <br/>
-                    <h1>Do you want to start?</h1>
+                    <h4>Do you want to start?</h4>
                     <br/>
                     <RaisedButton 
                     label="Yes"
@@ -36,6 +36,13 @@ export class ChooseTurn extends Component {
                 </React.Fragment>
             </MuiThemeProvider>
         );
+    }
+}
+
+const styles={
+    AppTitle: {
+        fontFamily: 'Yellowtail',
+        fontSize: 32
     }
 }
 

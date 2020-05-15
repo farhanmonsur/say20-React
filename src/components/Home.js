@@ -10,12 +10,15 @@ export class Home extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="Say20"/>
+                    <AppBar showMenuIconButton={false} titleStyle={styles.AppTitle} title="Say20"/>
+                    <br/>
+                    <br/>
                     <br/>
                     <RaisedButton 
                     label="How To Play?"
                     onClick={prevPage}
                     />
+                    <br/>
                     <br/>
                     <br/>
                     <RaisedButton label="Start Game"
@@ -24,6 +27,13 @@ export class Home extends Component {
                 </React.Fragment>
             </MuiThemeProvider>
         );
+    }
+}
+
+const styles = {
+    AppTitle: {
+        fontFamily: 'Yellowtail',
+        fontSize: 32
     }
 }
 

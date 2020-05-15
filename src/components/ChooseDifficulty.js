@@ -20,9 +20,9 @@ export class ChooseDifficulty extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="Say20"/>
+                    <AppBar showMenuIconButton={false} titleStyle={styles.AppTitle} title="Say20"/>
                     <br/>
-                    <h1>Choose Difficulty</h1>
+                    <h4>Choose Difficulty</h4>
                     <br/>
                     <RaisedButton 
                     label="Easy"
@@ -41,6 +41,12 @@ export class ChooseDifficulty extends Component {
                 </React.Fragment>
             </MuiThemeProvider>
         );
+    }
+}
+const styles={
+    AppTitle: {
+        fontFamily: 'Yellowtail',
+        fontSize: 32
     }
 }
 

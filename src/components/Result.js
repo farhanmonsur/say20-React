@@ -2,39 +2,34 @@ import React, { Component } from 'react'
 import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider';
 import  AppBar  from 'material-ui/AppBar';
 import  RaisedButton  from 'material-ui/RaisedButton';
+import { red500, green500 } from 'material-ui/styles/colors';
 
-export class Gameplay extends Component {
+export class Result extends Component {
 
-    button1 = () => {
-        this.props.gameplay(1);    
+    play = () => {
+        this.props.playAgain();    
     };
-    
-    button2 = () => {
-        this.props.gameplay(2);    
-    };
-    
+
     render() {
-        const{answer}=this.props;
+        const{pc, comment, result}=this.props;
         return (
             <MuiThemeProvider>
                 <React.Fragment>
                     <AppBar showMenuIconButton={false} titleStyle={styles.AppTitle} title="Say20"/>
                     <br/>
+                    <label style={styles.comment}>{comment}</label>
                     <br/>
-                    <label style={styles.answer}>My answer: {answer}</label>
+                    <label style={styles.answer}>{pc}</label>
+                    <br/>
+                    <br/>
+                    <label style={styles.result}>{result}</label>
                     <br/>
                     <br/>
                     <RaisedButton 
-                    label={answer+1}
-                    onClick={this.button1}
-                    />
-                    <br/>
-                    <br/>
-                    <RaisedButton label={answer+2}
-                    onClick={this.button2}
-                    />
-                    <br/>
-                    <br/>
+                    label="Play Again"
+                    secondary={true}
+                    onClick={this.play}
+                    /> 
                 </React.Fragment>
             </MuiThemeProvider>
         );
@@ -46,9 +41,17 @@ const styles = {
         fontFamily: 'Yellowtail',
         fontSize: 32
     },
+    comment:{
+        fontSize: 32,
+        color: red500
+    },
+    result:{
+        fontSize: 28,
+        color: green500
+    },
     answer :{
         fontSize: 20
     }
 }
 
-export default Gameplay
+export default Result
