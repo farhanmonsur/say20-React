@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/say20-React/static/css/main.2e77fa78.chunk.css",
+    "main.js": "/say20-React/static/js/main.2d27fc01.chunk.js",
+    "main.js.map": "/say20-React/static/js/main.2d27fc01.chunk.js.map",
+    "runtime-main.js": "/say20-React/static/js/runtime-main.9d093452.js",
+    "runtime-main.js.map": "/say20-React/static/js/runtime-main.9d093452.js.map",
+    "static/css/2.67123b20.chunk.css": "/say20-React/static/css/2.67123b20.chunk.css",
+    "static/js/2.63443c97.chunk.js": "/say20-React/static/js/2.63443c97.chunk.js",
+    "static/js/2.63443c97.chunk.js.map": "/say20-React/static/js/2.63443c97.chunk.js.map",
+    "index.html": "/say20-React/index.html",
+    "precache-manifest.1c9ac438e7f5cc8172e2e62b856ed221.js": "/say20-React/precache-manifest.1c9ac438e7f5cc8172e2e62b856ed221.js",
+    "service-worker.js": "/say20-React/service-worker.js",
+    "static/css/2.67123b20.chunk.css.map": "/say20-React/static/css/2.67123b20.chunk.css.map",
+    "static/css/main.2e77fa78.chunk.css.map": "/say20-React/static/css/main.2e77fa78.chunk.css.map",
+    "static/js/2.63443c97.chunk.js.LICENSE.txt": "/say20-React/static/js/2.63443c97.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d093452.js",
+    "static/css/2.67123b20.chunk.css",
+    "static/js/2.63443c97.chunk.js",
+    "static/css/main.2e77fa78.chunk.css",
+    "static/js/main.2d27fc01.chunk.js"
+  ]
+}
